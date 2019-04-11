@@ -1,0 +1,35 @@
+package JavaTwo;
+import java.util.Scanner;
+
+public class DataTwo {
+	
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		//List of variables
+		String string1 = null;
+		String string2 = null;
+		int absolute;
+		
+		//Input string 1 and 2
+		System.out.println("Please enter the first string:");
+		string1 = scan.next();
+		
+		System.out.println("Please enter the second string:");
+		string2 = scan.next();
+
+		byte[] bytes = new byte[10];
+
+		String str = new String(bytes, Charset.forName("UTF-8"));
+
+		System.out.println(str);
+		
+		
+//		System.out.println( "\\u" + Integer.toHexString('÷' | 0x10000).substring(1) );
+
+
+		
+		
+	}
+
+}

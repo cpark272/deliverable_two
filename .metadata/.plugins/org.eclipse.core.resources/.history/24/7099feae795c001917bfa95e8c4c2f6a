@@ -1,0 +1,39 @@
+package JavaTwo;
+import java.util.Scanner;
+
+public class DataTwo {
+	
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		//List of variables
+		String string1 = null;
+		String string2 = null;
+		int unicode;
+		int total;
+		
+		//Input string 1 and 2
+		System.out.println("Please enter the first string:");
+		string1 = scan.next();
+		
+//		System.out.println("Please enter the second string:");
+//		string2 = scan.next();
+
+		//Loop for string1
+		int counter = 0;
+		for (int i = 0; i < string1.length(); i++) {
+			 if (Character.isLetter(string1.charAt(i)))
+				 counter++;
+			 System.out.print(string1.charAt(i) + ": ");
+			 unicode = (int)(string1.charAt(i));
+			 System.out.println(unicode);
+			 total = unicode + total;
+		}
+//		System.out.println(counter + " letters.");
+
+		System.out.println(unicode);
+		
+		
+	}
+
+}
